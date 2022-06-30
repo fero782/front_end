@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form to enter your data</title>
 </head>
+
 <body>
-    
+    <!-- اهنا التعديل صار الحقول مطلوبه 
+والكلام موجود في حاله عدم وجود ليبل 
+
+
+
+-->
+    <p>welcome to my form</p>
+    <form action="" method="POST">
+        <div>
+            <label for="">Fist name:</label>
+            <input type="text" required placeholder="fist name" name="Fist_name">
+
+        </div>
+        <br>
+        <div>
+            <label for="">Last name:</label>
+            <input type="text" required placeholder="last name" name="Last_name">
+
+        </div>
+        <br>
+
+        <div>
+            <label for="">Phone:</label>
+            <input type="text" required placeholder="078X XXX XXXX" name="Phone_number">
+
+        </div>
+        <br>
+        <div>
+            <label for="">Email:</label>
+            <input type="email" required name="Email">
+
+        </div>
+        <br>
+        <div>
+            <label for="">Password:</label>
+            <input type="password" required name="Password" minlength="8" maxlength="256">
+
+        </div>
+
+        <br>
+        <div>
+            <label for="">subjact:</label>
+            <input type="text" name="subjact">
+
+        </div>
+
+        <br>
+        <div>
+            <label for="">Color:</label>
+            <input type="color" name="Color">
+
+        </div>
+
+        <br>
+        <div>
+            <label for="">Range:</label>
+            <input type="Range" name="Range" min="0" step="1" max="100">
+
+        </div>
+        <br>
+        <div>
+            <label for="Number">Number:</label>
+            <input id="Number" type="Number" name="Number" min="0" max="100">
+
+        </div>
+        <hr>
+        <br>
+        <p>اختر نظام التشغيل </p>
+        <div>
+
+            <input id="windos" type="radio" name="OS" value="windos" checked>
+            <label for="windos">windos</label>
+        </div>
+        <div>
+
+            <input id="linux" type="radio" name="OS" value="linux">
+            <label for="linux">linux</label>
+        </div>
+        <div>
+
+            <input id="Mac" type="radio" name="OS" value="Mac">
+            <label for="Mac">Mac</label>
+        </div>
+        <hr><br>
+
+        <div>
+
+            <input id="igrae" type="checkbox" name="igrae">
+            <label for="igrae">موافق على جميع الشروط</label>
+        </div>
+
+
+
+
+
+
+
+        <br>
+        <div>
+
+            <input type="submit" value="Save">
+
+            <input type="Reset">
+
+        </div>
+
+    </form>
 </body>
+
 </html>
